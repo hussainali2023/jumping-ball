@@ -1,8 +1,4 @@
-var curser = document.querySelector(".curser");
-document.addEventListener("mousemove", function (e) {
-  var X = e.clientX;
-  var Y = e.clientY;
-
-  curser.style.left = X + "px";
-  curser.style.top = Y + "px";
-});
+const colorPic = (id) => {
+  let color = id;
+  document.body.style.backgroundColor = color;
+};
