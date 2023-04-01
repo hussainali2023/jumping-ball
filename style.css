@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(61, 60, 60);
+  overflow: hidden;
+  min-height: 100vh;
+}
+.container {
+  height: 70vh;
+  overflow: hidden;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  /* background: linear-gradient(90deg); */
+}
+
+.counter:nth-child(even) {
+  margin-left: 1px;
+}
+.row {
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+.hexagon {
+  width: 100px;
+  height: 110px;
+
+  margin: 1px;
+
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: linear-gradient(
+    90deg,
+    rgb(111, 109, 114) 50%,
+    rgb(111, 109, 114) 50%
+  );
+}
+.row:nth-child(even) {
+  margin-left: 1px;
+}
+.functionality {
+  display: flex;
+  margin-top: 80px;
+  gap: 200px;
+}
+.color-set {
+  background-color: rgb(37, 36, 36);
+  padding: 20px;
+  color: white;
+  display: flex;
+}
+.color-set p {
+  font-size: 19px;
+  font-weight: 700;
+}
+.color-set .aqua-red {
+  display: flex;
+  gap: 5px;
+  margin-left: 5px;
+}
+.color-set .color-aqua {
+  background-color: aqua;
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+  border-radius: 30%;
+}
+.color-set .color-red {
+  background-color: red;
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+  border-radius: 30%;
+}
+.color-set .yellow-purple {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  margin-left: 5px;
+}
+.color-set .color-yellow {
+  background-color: yellow;
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+  border-radius: 30%;
+}
+.color-set .color-purple {
+  background-color: purple;
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+  border-radius: 30%;
+}
+
+.ball-selection {
+  background-color: rgb(37, 36, 36);
+  padding: 20px;
+  color: white;
+  display: flex;
+}
+
+.ball-selection p {
+  font-size: 19px;
+  font-weight: 700;
+  margin-right: 7px;
+}
+.ball-selection .all-ball {
+  display: flex;
+  gap: 15px;
+}
+.ball-selection .all-ball img {
+  width: 40px;
+  height: 40px;
+  gap: 15px;
+}
